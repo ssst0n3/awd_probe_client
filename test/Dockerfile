@@ -16,7 +16,7 @@ ADD $WAIT_RELEASE /wait
 RUN chmod +x /wait
 
 RUN mkdir -p /app
-COPY --from=backend /build/app /app/
+COPY --from=0 /build/app /app/
 
 WORKDIR /app
 CMD /wait && ./app

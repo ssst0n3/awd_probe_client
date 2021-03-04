@@ -8,6 +8,6 @@ import (
 
 func Proxy(c *gin.Context) {
 	req := c.Request.Clone(context.TODO())
-	req.URL.Host = "probe:13500"
+	req.Host = "probe:13500"
 	http.DefaultClient.Do(req)
 }
