@@ -1,0 +1,20 @@
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      WAIT_HOSTS: awd_probe:13500
+      WAIT_HOSTS_TIMEOUT: 300
+      WAIT_SLEEP_INTERVAL: 5
+      WAIT_HOST_CONNECT_TIMEOUT: 5
+  awd_probe:
+    container_name: awd_probe
+    image: swr.cn-south-1.myhuaweicloud.com/ctf_project/awd_probe:v0.1
+    restart: always
+    ports:
+      - "13500:13500"
+    environment:
+      - DB_DSN=/app/db/awd_probe.sqlite
+      - LOCAL_LISTEN_PORT=13500
