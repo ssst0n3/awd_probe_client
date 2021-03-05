@@ -34,8 +34,8 @@ github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZb
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/sirupsen/logrus v1.6.0 h1:UBcNElsrwanuuMsnGSlYmtmgbb23qDR5dG+6X6Oo89I=
 github.com/sirupsen/logrus v1.6.0/go.mod h1:7uNnSEd1DgxDLC74fIahvMZmmYsHGZGEOFrfsX/uA88=
-github.com/ssst0n3/awd_probe_client v0.0.1 h1:hAURLVlWgz62N5/2k+uBIVLca4CTpNCOx8Z2hLsqGos=
-github.com/ssst0n3/awd_probe_client v0.0.1/go.mod h1:C2zFnWCV5FP7dxI5uQ+9vd5oDyNvSgdHERMjINyRUZM=
+github.com/ssst0n3/awd_probe_client v0.0.2 h1:UXbwt1aBVYrFD1Yaef1LBumIja6yHupi9uFhi0aSO1g=
+github.com/ssst0n3/awd_probe_client v0.0.2/go.mod h1:IC6BA+63x6AzQ7qParWv2BZ404kQFc4UCLplV71NZvY=
 github.com/ssst0n3/awesome_libs v0.5.9 h1:vMv87K+QjhmDfRhEhg6Mapi2XUbLKOCQOQUMT527hsA=
 github.com/ssst0n3/awesome_libs v0.5.9/go.mod h1:2c7yWeIaTpUg7CDxI4wi1eMRUuisdUVSN3oPqeBPOkI=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
