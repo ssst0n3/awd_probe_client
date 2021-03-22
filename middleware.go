@@ -3,9 +3,9 @@ package awd_probe_client
 import (
 	"bytes"
 	"context"
-	"github.com/davecgh/go-spew/spew"
 	"github.com/gin-gonic/gin"
 	"github.com/ssst0n3/awesome_libs/awesome_error"
+	"github.com/ssst0n3/awesome_libs/log"
 	"io/ioutil"
 	"net/http"
 	"net/http/httputil"
@@ -33,5 +33,5 @@ func Proxy(c *gin.Context) {
 		return
 	}
 	dump, _ := httputil.DumpResponse(resp, true)
-	spew.Dump(dump)
+	log.Logger.Debug(dump)
 }
