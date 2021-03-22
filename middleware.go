@@ -12,6 +12,9 @@ import (
 )
 
 func Proxy(c *gin.Context) {
+	if c.GetHeader("Probe-Repeater") == "yes" {
+		return
+	}
 	body, err := ioutil.ReadAll(c.Request.Body)
 	if err != nil {
 		awesome_error.CheckErr(err)
