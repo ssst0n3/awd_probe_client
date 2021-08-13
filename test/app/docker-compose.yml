@@ -12,11 +12,12 @@ services:
       PROBE_HOST: "probe:13500"
   probe:
     container_name: awd_probe
-    image: swr.cn-south-1.myhuaweicloud.com/ctf_project/awd_probe:v0.1
+    image: swr.cn-south-1.myhuaweicloud.com/ctf_project/awd_probe:v0.2
     restart: always
     ports:
       - "13500:13500"
     environment:
+      - DB_DRIVER_NAME=sqlite
       - DB_DSN=/app/db/awd_probe.sqlite
       - LOCAL_LISTEN_PORT=13500
     volumes:
