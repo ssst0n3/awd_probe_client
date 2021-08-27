@@ -4,6 +4,7 @@ services:
     build: .
     ports:
       - "8888:8888"
+    restart: always
     environment:
       WAIT_HOSTS: awd_probe:13500
       WAIT_HOSTS_TIMEOUT: 300
@@ -21,6 +22,14 @@ services:
       - DB_DSN=/app/db/awd_probe.sqlite
       - LOCAL_LISTEN_PORT=13500
     volumes:
+      - awd_probe_db:/app/db
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "13002:8080"    
+    volumes: 
+      - "./login-password-less.php:/var/www/html/plugins-enabled/login-password-less.php"
       - awd_probe_db:/app/db
 
 volumes:
