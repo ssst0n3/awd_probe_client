@@ -13,7 +13,7 @@ services:
       PROBE_HOST: "probe:13500"
   probe:
     container_name: awd_probe
-    image: swr.cn-south-1.myhuaweicloud.com/ctf_project/awd_probe:v0.4
+    image: swr.cn-south-1.myhuaweicloud.com/ctf_project/awd_probe:v0.5
     restart: always
     ports:
       - "13500:13500"
